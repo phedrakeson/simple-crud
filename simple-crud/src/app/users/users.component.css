@@ -1,0 +1,11 @@
+table {
+  width: 60vw;
+}
+
+table thead {
+  background-color: aqua;
+}
+
+table td {
+  border: 1px solid #000;
+}
