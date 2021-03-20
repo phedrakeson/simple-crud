@@ -1,0 +1,27 @@
+<h1>Criar Usuário</h1>
+
+<label for="name">Nome:
+  <input type="text" name="name" [(ngModel)]="request.name">
+</label>
+
+<label for="job">Profissão:
+  <input type="text" name="job" [(ngModel)]="request.job">
+</label>
+
+<button (click)="cadastrarUsuario()" >Cadastrar</button>
+
+<div *ngIf="response">
+  <h3>Criado com sucesso!</h3>
+  <label>Nome:
+    {{response.name}}
+  </label>
+  <label>Profissão:
+    {{response.job}}
+  </label>
+  <label>ID:
+    {{response.id}}
+  </label>
+  <label>Criado em:
+    {{response.createdAt}}
+  </label>
+</div>
