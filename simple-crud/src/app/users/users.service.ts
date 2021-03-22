@@ -20,12 +20,12 @@ export class UsersService {
     return this.http.post<ResponseCreate>(this.url, request);
   }
 
-  getUserByID(id: string): Observable<ResponseUser> {
+  getUserByID(id: string | null): Observable<ResponseUser> {
     const _url = `${this.url}/${id}`
     return this.http.get<ResponseUser>(_url)
   }
 
-  updateUser(id: string, request: RequestUpdate): Observable<ResponseUpdate> {
+  updateUser(id: string | null, request: RequestUpdate): Observable<ResponseUpdate> {
     const _url = `${this.url}/${id}`
     return this.http.put<ResponseUpdate>(_url, request)
   }

@@ -40,5 +40,5 @@ export interface RequestUpdate {
 export interface ResponseUpdate {
   name: string;
   job: string;
-  createdAt: Date;
+  updatedAt: Date;
 }

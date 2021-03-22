@@ -8,12 +8,14 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserCreateComponent } from './users/user-create/user-create.component';
+import { UserUpdateComponent } from './users/user-update/user-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    UserCreateComponent
+    UserCreateComponent,
+    UserUpdateComponent
   ],
   imports: [
     BrowserModule,

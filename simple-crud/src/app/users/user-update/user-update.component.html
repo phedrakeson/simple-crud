@@ -1,0 +1,11 @@
+<h1>Atualizar Usuário</h1>
+
+<label for="name">Nome:
+  <input type="text" name="name" [(ngModel)]="request.name">
+</label>
+
+<label for="job">Profissão:
+  <input type="text" name="job" [(ngModel)]="request.job">
+</label>
+
+<button (click)="atualizarUsuario()" >Atualizar</button>
