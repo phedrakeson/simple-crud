@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserCreateComponent } from './users/user-create/user-create.component';
 import { UserUpdateComponent } from './users/user-update/user-update.component';
+import { UserDeleteComponent } from './users/user-delete/user-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     UserCreateComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -9,3 +9,7 @@ table thead {
 table td {
   border: 1px solid #000;
 }
+
+a {
+  margin-right: 20px;
+}

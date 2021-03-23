@@ -1,0 +1,11 @@
+<h1>Deseja remover este usuário?</h1>
+
+<label for="name">Nome:
+  <input readonly type="text" name="name" [(ngModel)]="dados.first_name">
+</label>
+
+<label for="name">Sobrenome:
+  <input readonly type="text" name="name" [(ngModel)]="dados.last_name">
+</label>
+
+<button (click)="removerUsuario()" >Confirmar</button>
